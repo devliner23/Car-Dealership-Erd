@@ -72,5 +72,21 @@ create table customer (
 );
 
 
+alter table service_record
+rename date to service_record_date
+
+alter table invoice 
+rename date to invoice_date
+
+alter table car 
+rename year to car_year
+
+alter table service_ticket 
+alter column service_total set data type numeric(8,2)
+
+alter table customer 
+add column first_name VARCHAR(50),
+add column last_name VARCHAR(50);
+
 
 
